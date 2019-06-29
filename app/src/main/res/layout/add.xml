@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/bar"
+		android:background="#FF212121"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="12dp"
+		android:background="#FF212121">
+
+		<ImageView
+			android:src="@drawable/up_arrow"
+			android:layout_width="34dp"
+			android:rotation="270"
+			android:layout_height="37dp"
+			android:onClick="back"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="0字"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="left|center"
+			android:textSize="14sp"
+			android:layout_weight="1.0"
+			android:textColor="#FF9E9E9E"
+			android:id="@+id/addTextView1"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="图片"
+			android:textColor="#FF9E9E9E"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginRight="3dp"
+			android:gravity="center"
+			android:textSize="19sp"
+			android:onClick="choosePicture"
+			android:id="@+id/addTextView2"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="预览"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="center"
+			android:layout_marginRight="3dp"
+			android:textSize="19sp"
+			android:textColor="#FF9E9E9E"
+			android:layout_marginLeft="3dp"
+			android:onClick="look"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="发布"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:gravity="center"
+			android:layout_marginLeft="3dp"
+			android:textSize="19sp"
+			android:textColor="#FFE0E0E0"/>
+
+	</LinearLayout>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@null"
+		android:hint="请输入正文"
+		android:gravity="top|left"
+		android:padding="12dp"
+		android:textSize="16sp"
+		android:id="@+id/edit"/>
+
+</LinearLayout>
+
+

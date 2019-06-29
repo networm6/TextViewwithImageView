@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:id="@+id/popviewLinearLayout1"
+	android:background="#A0212121">
+
+	<com.mim.nzoom
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/popviewnzoom1"
+		android:src="@drawable/moren"
+		android:scaleType="matrix"
+		android:layout_weight="1.0"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<Button
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:text="保存"
+			android:id="@+id/popviewButton1"
+			android:layout_weight="1.0"
+			android:background="#FF212121"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:text="顺时针旋转90度"
+			android:layout_weight="1.0"
+			android:id="@+id/popviewButton2"
+			android:background="#FF212121"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
+
